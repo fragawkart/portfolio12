@@ -635,42 +635,95 @@
     </section>
 
     <section id="contact" aria-labelledby="contact-title">
-      <div class="wrap contact-grid">
-        <div class="contact-copy reveal">
-          <span class="eyebrow">Kontakt</span>
-          <h2 id="contact-title">Zróbmy<br><span class="accent-text">dobry start.</span></h2>
-          <p>Opowiedz nam o swoim pomyśle. Napisz, czego potrzebuje Twoja firma — wrócimy do Ciebie z odpowiedzią.</p>
-          <div class="contact-direct">
-            <span>Napisz do nas</span>
-            <a href="mailto:safelaunchweb@gmail.com">safelaunchweb@gmail.com</a>
-            <span>Zadzwoń</span>
-            <a href="tel:+48512283745">512 283 745</a>
-          </div>
-        </div>
-        <form class="contact-form" action="https://formspree.io/f/mrmpbvqke" method="POST">
-          <input type="hidden" name="_subject" value="Nowa wiadomość ze strony Safe Launch">
-          <label class="field">
-            <span>Adres e-mail</span>
-            <input type="email" name="email" autocomplete="email" placeholder="twoj@email.pl" required>
-          </label>
-          <label class="field">
-            <span>Rodzaj usługi</span>
-            <select name="rodzaj_uslugi" required>
-              <option value="" selected disabled>Wybierz rodzaj usługi</option>
-              <option value="Strona internetowa">Strona internetowa</option>
-              <option value="System CRM / ERP">System CRM / ERP</option>
-              <option value="Inne">Inne</option>
-            </select>
-          </label>
-          <label class="field">
-            <span>Wiadomość</span>
-            <textarea name="wiadomosc" placeholder="Opowiedz krótko o swoim pomyśle..." required></textarea>
-          </label>
-          <button class="button button-primary" type="submit">Wyślij wiadomość <span aria-hidden="true">↗</span></button>
-          <p class="form-note">Po wysłaniu formularza skontaktujemy się z Tobą na podany adres e-mail.</p>
-        </form>
+  <div class="wrap contact-grid">
+
+    <div class="contact-copy reveal">
+      <span class="eyebrow">Kontakt</span>
+
+      <h2 id="contact-title">
+        Zróbmy<br>
+        <span class="accent-text">dobry start.</span>
+      </h2>
+
+      <p>
+        Opowiedz nam o swoim pomyśle. Napisz, czego potrzebuje Twoja firma —
+        wrócimy do Ciebie z odpowiedzią.
+      </p>
+
+      <div class="contact-direct">
+        <span>Napisz do nas</span>
+        <a href="mailto:safelaunchweb@gmail.com">
+          safelaunchweb@gmail.com
+        </a>
+
+        <span>Zadzwoń</span>
+        <a href="tel:+48512283745">
+          512 283 745
+        </a>
       </div>
-    </section>
+    </div>
+
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/mrpbvqke"
+      method="POST"
+    >
+      <input
+        type="hidden"
+        name="_subject"
+        value="Nowa wiadomość ze strony Safe Launch"
+      >
+
+      <label class="field">
+        <span>Adres e-mail</span>
+        <input
+          type="email"
+          name="email"
+          autocomplete="email"
+          placeholder="twoj@email.pl"
+          required
+        >
+      </label>
+
+      <label class="field">
+        <span>Rodzaj usługi</span>
+        <select name="rodzaj_uslugi" required>
+          <option value="" selected disabled>
+            Wybierz rodzaj usługi
+          </option>
+          <option value="Strona internetowa">
+            Strona internetowa
+          </option>
+          <option value="System CRM / ERP">
+            System CRM / ERP
+          </option>
+          <option value="Inne">
+            Inne
+          </option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>Wiadomość</span>
+        <textarea
+          name="wiadomosc"
+          placeholder="Opowiedz krótko o swoim pomyśle..."
+          required
+        ></textarea>
+      </label>
+
+      <button class="button button-primary" type="submit">
+        Wyślij wiadomość
+        <span aria-hidden="true">↗</span>
+      </button>
+
+      <p class="form-note">
+        Po wysłaniu formularza skontaktujemy się z Tobą na podany adres e-mail.
+      </p>
+    </form>
+
+  </div>
+</section>
   </main>
 
   <footer id="footer">
