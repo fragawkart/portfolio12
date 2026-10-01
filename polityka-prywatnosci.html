@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polityka prywatności — Safe Launch</title>
+  <meta name="description" content="Polityka prywatności serwisu Safe Launch. Informacje o przetwarzaniu danych osobowych, prawach osób, plikach cookies i okresach przechowywania danych.">
+  <meta name="theme-color" content="#151519">
+  <link rel="canonical" href="https://safelaunch.pl/polityka-prywatnosci.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0c0e79;
+      --secondary: #08384f;
+      --accent: #0783a2;
+      --background: #151519;
+      --text: #f2f2f3;
+      --muted: #a3a4b0;
+      --panel: #1c1d23;
+      --line: rgba(242,242,243,.13);
+      --blue-glow: rgba(7,131,162,.2);
+      --font-display: "Manrope", sans-serif;
+      --font-mono: "DM Mono", monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0; background: var(--background); color: var(--text);
+      font-family: var(--font-display); -webkit-font-smoothing: antialiased;
+      overflow-x: hidden; word-spacing: .12em;
+    }
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .18;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.13'/%3E%3C/svg%3E");
+    }
+    ::selection { background: var(--accent); color: white; }
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: var(--background); }
+    ::-webkit-scrollbar-thumb { background: #343640; border: 2px solid var(--background); border-radius: 8px; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+    .topbar { position: fixed; inset: 0 0 auto; z-index: 20; height: 68px; background: rgba(21,21,25,.78); border-bottom: 1px solid var(--line); backdrop-filter: blur(18px); }
+    .nav { height: 100%; display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 800; letter-spacing: -.045em; }
+    .brand-logo { display: block; width: auto; height: 38px; max-width: 180px; object-fit: contain; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a { color: #c6c6ce; font-size: 12px; transition: color .25s ease; }
+    .nav-links a:hover { color: white; }
+    .nav-cta, .button { display: inline-flex; align-items: center; justify-content: center; gap: 11px; padding: 13px 18px; border: 1px solid rgba(105,209,223,.55); color: white; background: rgba(7,131,162,.12); font-size: 12px; font-weight: 700; transition: transform .25s ease, background .25s ease, box-shadow .25s ease; }
+    .nav-cta:hover, .button:hover { transform: translateY(-3px); background: var(--accent); box-shadow: 0 12px 35px rgba(7,131,162,.25); }
+    .menu-toggle { display: none; border: 0; background: transparent; color: white; font-size: 24px; cursor: pointer; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: #67c5d5; font: 500 11px var(--font-mono); text-transform: uppercase; letter-spacing: .16em; }
+    .eyebrow::before { content: ""; width: 20px; height: 1px; background: currentColor; }
+    main { min-height: calc(100vh - 100px); padding: 142px 0 120px; position: relative; background: radial-gradient(ellipse at 86% 10%, rgba(7,131,162,.11), transparent 34%), radial-gradient(ellipse at 15% 26%, rgba(12,14,121,.12), transparent 40%); }
+    .page-heading { padding-bottom: 43px; border-bottom: 1px solid var(--line); }
+    .page-heading h1 { max-width: 900px; margin: 20px 0 18px; font-size: clamp(3rem, 8vw, 6.4rem); line-height: .95; letter-spacing: -.085em; font-weight: 600; }
+    .page-heading h1 span { color: #68c9d9; }
+    .page-heading p { max-width: 670px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+    .updated { display: block; margin-top: 22px; color: #828590; font: 10px var(--font-mono); letter-spacing: .08em; }
+    .legal-layout { display: grid; grid-template-columns: 235px minmax(0, 1fr); gap: 76px; padding-top: 55px; align-items: start; }
+    .legal-nav { position: sticky; top: 100px; padding: 22px; border: 1px solid var(--line); background: rgba(28,29,35,.7); }
+    .legal-nav strong { display: block; margin-bottom: 15px; color: #70cbd9; font: 10px var(--font-mono); text-transform: uppercase; letter-spacing: .12em; }
+    .legal-nav a { display: block; padding: 9px 0; color: #a3a4b0; font-size: 11px; line-height: 1.55; border-bottom: 1px solid rgba(255,255,255,.06); transition: color .2s ease; }
+    .legal-nav a:last-child { border-bottom: 0; }
+    .legal-nav a:hover { color: #70d0de; }
+    .legal-content { min-width: 0; }
+    .legal-section { padding: 0 0 36px; margin: 0 0 36px; border-bottom: 1px solid var(--line); scroll-margin-top: 95px; }
+    .legal-section:last-of-type { border-bottom: 0; }
+    .legal-section h2 { margin: 0 0 18px; font-size: clamp(1.55rem, 3vw, 2.2rem); line-height: 1.12; letter-spacing: -.065em; font-weight: 600; }
+    .legal-section h3 { margin: 24px 0 10px; color: #e4e5e9; font-size: 14px; letter-spacing: -.025em; }
+    .legal-section p, .legal-section li { color: #a3a4b0; font-size: 13px; line-height: 1.9; }
+    .legal-section p { margin: 0 0 14px; }
+    .legal-section ul { margin: 12px 0 16px; padding-left: 20px; }
+    .legal-section li { padding-left: 4px; margin: 6px 0; }
+    .legal-section li::marker { color: #69c9d9; }
+    .legal-section a { color: #72c9d8; text-decoration: underline; text-decoration-color: rgba(114,201,216,.35); text-underline-offset: 3px; }
+    .legal-section a:hover { color: white; }
+    .legal-note { margin-top: 24px; padding: 18px 20px; border-left: 2px solid #0783a2; background: rgba(7,131,162,.08); color: #b9bbc5; font-size: 12px; line-height: 1.8; }
+    .back-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 6px; color: #71cbd9; font: 10px var(--font-mono); text-transform: uppercase; letter-spacing: .09em; transition: gap .2s ease, color .2s ease; }
+    .back-link:hover { gap: 15px; color: white; }
+    #footer { padding: 26px 0 30px; border-top: 1px solid var(--line); }
+    .footer-row { display: flex; align-items: center; justify-content: space-between; gap: 25px; }
+    .footer-copy { color: #777985; font: 9px var(--font-mono); }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 22px; color: #a2a4ae; font-size: 10px; }
+    .footer-links a { transition: color .2s; }
+    .footer-links a:hover { color: #70d0de; }
+    .back-top { color: #72c9d8; font: 9px var(--font-mono); }
+    @media (max-width: 900px) {
+      .nav-links { gap: 17px; }
+      .nav-links a { font-size: 11px; }
+      .legal-layout { grid-template-columns: 200px minmax(0, 1fr); gap: 42px; }
+    }
+    @media (max-width: 720px) {
+      .wrap { width: min(100% - 38px, 540px); }
+      .topbar { height: 67px; }
+      .nav-cta { display: none; }
+      .menu-toggle { display: block; }
+      .nav-links { position: absolute; top: 67px; left: 0; right: 0; display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 20px 20px; background: rgba(21,21,25,.97); backdrop-filter: blur(18px); border-bottom: 1px solid var(--line); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: .25s ease; }
+      .nav-links.open { opacity: 1; visibility: visible; transform: translateY(0); }
+      .nav-links li a { display: block; padding: 13px 4px; border-bottom: 1px solid rgba(255,255,255,.06); font-size: 13px; }
+      main { padding: 118px 0 85px; }
+      .page-heading { padding-bottom: 32px; }
+      .page-heading h1 { font-size: clamp(3rem, 13vw, 5rem); }
+      .legal-layout { display: block; padding-top: 34px; }
+      .legal-nav { position: static; margin-bottom: 42px; }
+      .legal-nav a { display: inline-block; margin-right: 15px; }
+      .legal-section { padding-bottom: 28px; margin-bottom: 28px; }
+      .footer-row { flex-wrap: wrap; }
+      .footer-copy { order: 3; width: 100%; }
+    }
+    @media (max-width: 420px) {
+      .wrap { width: calc(100% - 32px); }
+      .footer-links { gap: 14px; }
+      .legal-nav { padding: 17px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar" id="site-header">
+    <nav class="nav wrap" aria-label="Nawigacja główna">
+      <a class="brand" href="index.html" aria-label="Safe Launch — strona główna">
+        <img class="brand-logo" src="assets/logo.png" alt="Logo Safe Launch">
+      </a>
+      <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="main-menu">☰</button>
+      <ul class="nav-links" id="main-menu">
+        <li><a href="index.html#about">O nas</a></li>
+        <li><a href="index.html#process">Jak pracujemy</a></li>
+        <li><a href="index.html#services">Usługi</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+      <a class="nav-cta" href="index.html#contact">Porozmawiajmy <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <header class="page-heading">
+        <span class="eyebrow">Informacje prawne</span>
+        <h1>Polityka <span>prywatności.</span></h1>
+        <p>Dowiedz się, w jaki sposób Safe Launch przetwarza dane osobowe osób odwiedzających serwis, kontaktujących się w sprawie usług lub korzystających z portfolio.</p>
+        <span class="updated">OSTATNIA AKTUALIZACJA: 30 WRZEŚNIA 2026 R.</span>
+      </header>
+
+      <div class="legal-layout">
+        <nav class="legal-nav" aria-label="Spis treści polityki prywatności">
+          <strong>W tej polityce</strong>
+          <a href="#administrator">Administrator danych</a>
+          <a href="#cele">Cele i podstawy przetwarzania</a>
+          <a href="#odbiorcy">Odbiorcy danych</a>
+          <a href="#okres">Okres przechowywania</a>
+          <a href="#prawa">Prawa osób</a>
+          <a href="#cookies">Pliki cookies</a>
+          <a href="#pozostale">Pozostałe informacje</a>
+        </nav>
+
+        <article class="legal-content">
+          <section class="legal-section" id="administrator">
+            <h2>1. Administrator danych osobowych</h2>
+            <p>Administratorem danych osobowych jest Safe Launch — podmiot prowadzący serwis i oferujący projektowanie stron internetowych oraz rozwiązań dla firm pod tą marką.</p>
+            <p>W sprawach dotyczących prywatności i przetwarzania danych można skontaktować się z administratorem pod adresem <a href="mailto:safelaunchweb@gmail.com">safelaunchweb@gmail.com</a> lub telefonicznie: <a href="tel:+48512283745">+48 512 283 745</a>.</p>
+            <div class="legal-note">Safe Launch jest nazwą marki. Przed publikacją tej polityki należy uzupełnić dane identyfikujące administratora: pełną firmę albo imię i nazwisko oraz adres siedziby lub miejsca prowadzenia działalności. Sam adres e-mail i nazwa marki mogą nie wystarczyć do prawidłowego wypełnienia obowiązku informacyjnego.</div>
+          </section>
+
+          <section class="legal-section" id="cele">
+            <h2>2. Cele i podstawy przetwarzania</h2>
+            <p>Dane przetwarzamy tylko w zakresie potrzebnym do prowadzenia serwisu, obsługi zapytań i realizacji uzgodnionej współpracy. W zależności od sytuacji podstawą prawną jest jedna z przesłanek określonych w art. 6 ust. 1 RODO:</p>
+            <ul>
+              <li><strong>Odpowiedź na wiadomość i ustalenia przed zawarciem umowy</strong> — podjęcie działań na żądanie osoby, której dane dotyczą (art. 6 ust. 1 lit. b RODO), a w pozostałym zakresie prawnie uzasadniony interes administratora polegający na obsłudze korespondencji (art. 6 ust. 1 lit. f RODO).</li>
+              <li><strong>Zawarcie i realizacja umowy</strong> dotyczącej projektu strony lub innej usługi — niezbędność do wykonania umowy lub podjęcia działań przed jej zawarciem (art. 6 ust. 1 lit. b RODO).</li>
+              <li><strong>Rozliczenia oraz obowiązki prawne</strong> — wypełnienie obowiązków wynikających z przepisów, w szczególności podatkowych i rachunkowych (art. 6 ust. 1 lit. c RODO).</li>
+              <li><strong>Bezpieczeństwo, prawidłowe działanie i diagnostyka serwisu</strong> — prawnie uzasadniony interes administratora, obejmujący ochronę serwisu, ustalanie przyczyn błędów i obronę przed roszczeniami (art. 6 ust. 1 lit. f RODO).</li>
+              <li><strong>Opcjonalne cookies lub podobne technologie</strong> — zgoda użytkownika, jeśli takie technologie zostaną wdrożone i będą wymagały zgody (art. 6 ust. 1 lit. a RODO oraz właściwe przepisy dotyczące komunikacji elektronicznej).</li>
+            </ul>
+            <p>Podanie danych w korespondencji jest dobrowolne, ale może być potrzebne do udzielenia odpowiedzi, przygotowania oferty albo zawarcia i wykonania umowy. Dane mogą obejmować w szczególności imię, adres e-mail, numer telefonu, treść wiadomości oraz informacje dotyczące projektu.</p>
+          </section>
+
+          <section class="legal-section" id="odbiorcy">
+            <h2>3. Odbiorcy danych</h2>
+            <p>Dostęp do danych mogą otrzymać wyłącznie podmioty, którym jest to niezbędne do obsługi serwisu, korespondencji lub umowy, w szczególności:</p>
+            <ul>
+              <li>dostawcy hostingu, serwerów, domeny i usług technicznych,</li>
+              <li>dostawcy poczty elektronicznej i narzędzi komunikacyjnych używanych do obsługi wiadomości,</li>
+              <li>dostawcy usług prawnych, księgowych lub doradczych — jeśli będzie to potrzebne,</li>
+              <li>uprawnione organy publiczne — gdy obowiązek udostępnienia danych wynika z przepisów prawa.</li>
+            </ul>
+            <p>Serwis korzysta z krojów pisma Google Fonts ładowanych z serwerów Google. Przy pobieraniu fontów przeglądarka może przekazać dostawcy m.in. adres IP i informacje techniczne niezbędne do obsługi żądania. W zależności od sposobu realizacji usługi dane mogą być przetwarzane poza Europejskim Obszarem Gospodarczym; w takim przypadku zastosowanie mają mechanizmy transferu i zabezpieczenia przewidziane przez dostawcę oraz obowiązujące przepisy.</p>
+            <p>Dane nie są sprzedawane. Administrator nie prowadzi na podstawie opisanych informacji profilowania wywołującego skutki prawne ani podobnie istotne skutki.</p>
+          </section>
+
+          <section class="legal-section" id="okres">
+            <h2>4. Okres przechowywania danych</h2>
+            <p>Dane przechowujemy przez okres adekwatny do celu ich zebrania, a następnie usuwamy albo ograniczamy ich przetwarzanie, o ile dalsze przechowywanie nie jest wymagane przez prawo lub potrzebne do ochrony przed roszczeniami.</p>
+            <ul>
+              <li><strong>Zapytania i korespondencja, które nie prowadzą do zawarcia umowy</strong> — przez czas obsługi sprawy, a następnie co do zasady do 12 miesięcy od zakończenia kontaktu, chyba że wcześniej zgłoszono sprzeciw lub dane należy zachować w celu ustalenia, dochodzenia albo obrony roszczeń.</li>
+              <li><strong>Dane związane z umową i rozliczeniami</strong> — przez okres wymagany właściwymi przepisami podatkowymi i rachunkowymi, zasadniczo 5 lat według terminów liczonych określonymi w tych przepisach, a w niezbędnym zakresie także do upływu właściwego terminu przedawnienia roszczeń.</li>
+              <li><strong>Dane techniczne i logi serwera</strong> — przez okres potrzebny do zapewnienia bezpieczeństwa, diagnozowania awarii i administrowania serwisem, zgodnie z ustawieniami i okresem retencji dostawcy hostingu.</li>
+              <li><strong>Dane przetwarzane na podstawie zgody</strong> — do czasu jej wycofania lub ustania celu, dla którego zgoda została udzielona.</li>
+            </ul>
+            <p>Dokładny okres może zależeć od rodzaju sprawy, obowiązujących przepisów oraz okresu, w którym możliwe jest dochodzenie roszczeń.</p>
+          </section>
+
+          <section class="legal-section" id="prawa">
+            <h2>5. Prawa osób, których dane dotyczą</h2>
+            <p>Na zasadach i w granicach określonych przez RODO przysługują Ci następujące prawa:</p>
+            <ul>
+              <li>prawo dostępu do danych i otrzymania ich kopii,</li>
+              <li>prawo do sprostowania danych nieprawidłowych oraz uzupełnienia danych niekompletnych,</li>
+              <li>prawo do usunięcia danych („prawo do bycia zapomnianym”), gdy zachodzą przesłanki wskazane w RODO,</li>
+              <li>prawo do ograniczenia przetwarzania,</li>
+              <li>prawo do przenoszenia danych — w zakresie, w jakim podstawą przetwarzania jest umowa lub zgoda, a przetwarzanie odbywa się w sposób zautomatyzowany,</li>
+              <li>prawo do wniesienia sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie administratora, z przyczyn związanych z Twoją szczególną sytuacją,</li>
+              <li>prawo do wycofania zgody w dowolnym momencie, jeżeli przetwarzanie odbywa się na podstawie zgody; wycofanie zgody nie wpływa na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem,</li>
+              <li>prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych, jeśli uznasz, że przetwarzanie narusza przepisy o ochronie danych osobowych.</li>
+            </ul>
+            <p>Aby skorzystać z praw, skontaktuj się z administratorem: <a href="mailto:safelaunchweb@gmail.com">safelaunchweb@gmail.com</a>. Odpowiedź zostanie udzielona bez zbędnej zwłoki, nie później niż w terminie miesiąca od otrzymania żądania. W przypadkach przewidzianych w RODO termin może zostać przedłużony o kolejne dwa miesiące; poinformujemy o tym wraz z podaniem przyczyn opóźnienia.</p>
+          </section>
+
+          <section class="legal-section" id="cookies">
+            <h2>6. Pliki cookies</h2>
+            <p>Cookies to niewielkie informacje zapisywane w urządzeniu użytkownika przez przeglądarkę. Mogą być używane do zapewnienia prawidłowego działania serwisu, zapamiętania ustawień lub obsługi funkcji zewnętrznych.</p>
+            <p>Serwis nie wykorzystuje obecnie własnych cookies reklamowych ani analitycznych. Usługa hostingu może stosować techniczne mechanizmy niezbędne do świadczenia usługi i zabezpieczenia serwisu. Zewnętrzne fonty Google Fonts są pobierane z serwerów Google; samo pobranie plików fontów może wiązać się z przekazaniem informacji technicznych, ale nie oznacza samo w sobie, że Safe Launch zapisuje reklamowe cookies na urządzeniu użytkownika.</p>
+            <p>Jeśli w przyszłości zostaną dodane opcjonalne cookies lub podobne technologie wymagające zgody, będą uruchamiane dopiero po uzyskaniu wymaganej zgody. Użytkownik może także zarządzać cookies w ustawieniach swojej przeglądarki, w tym usuwać je lub blokować. Ograniczenie cookies technicznych może wpłynąć na działanie niektórych funkcji serwisu.</p>
+          </section>
+
+          <section class="legal-section" id="pozostale">
+            <h2>7. Pozostałe informacje</h2>
+            <h3>Formularz kontaktowy</h3>
+            <p>Formularz kontaktowy w serwisie korzysta z mechanizmu „mailto”. Po jego wysłaniu przeglądarka może otworzyć skonfigurowany program pocztowy. Dane zawarte w wiadomości trafiają do administratora za pośrednictwem wybranej przez użytkownika usługi poczty elektronicznej i podlegają również zasadom jej dostawcy.</p>
+            <h3>Bezpieczeństwo i zmiany polityki</h3>
+            <p>Administrator stosuje środki techniczne i organizacyjne odpowiednie do ryzyka związanego z przetwarzaniem danych. Polityka może być aktualizowana, w szczególności w razie zmian przepisów, funkcji serwisu lub sposobu przetwarzania danych. Aktualna wersja jest publikowana na tej stronie.</p>
+            <p>Polityka opisuje zasady dotyczące serwisu Safe Launch. Linki prowadzące do zewnętrznych stron mogą podlegać odrębnym politykom prywatności ich operatorów.</p>
+          </section>
+
+          <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Wróć na stronę główną</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="wrap footer-row">
+      <a class="brand" href="index.html" aria-label="Safe Launch — wróć na stronę główną">
+        <img class="brand-logo" src="assets/logo.png" alt="Logo Safe Launch">
+      </a>
+      <div class="footer-links">
+        <a href="index.html#about">O nas</a>
+        <a href="index.html#services">Usługi</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#contact">Kontakt</a>
+        <a href="regulamin.html">Regulamin</a>
+        <a href="polityka-prywatnosci.html" aria-current="page">Polityka prywatności</a>
+      </div>
+      <a class="back-top" href="#">DO GÓRY ↑</a>
+      <span class="footer-copy">© <span id="year"></span> Safe Launch. Wszystkie prawa zastrzeżone.</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('main-menu');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Zamknij menu' : 'Otwórz menu');
+      menuToggle.textContent = isOpen ? '×' : '☰';
+    });
+
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Otwórz menu');
+        menuToggle.textContent = '☰';
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
