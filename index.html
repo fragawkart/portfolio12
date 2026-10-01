@@ -652,27 +652,15 @@
 
       <div class="contact-direct">
         <span>Napisz do nas</span>
-        <a href="mailto:safelaunchweb@gmail.com">
-          safelaunchweb@gmail.com
-        </a>
+        <a href="mailto:safelaunchweb@gmail.com">safelaunchweb@gmail.com</a>
 
         <span>Zadzwoń</span>
-        <a href="tel:+48512283745">
-          512 283 745
-        </a>
+        <a href="tel:+48512283745">512 283 745</a>
       </div>
     </div>
 
-    <form
-      class="contact-form"
-      action="https://formspree.io/f/mrpbvqke"
-      method="POST"
-    >
-      <input
-        type="hidden"
-        name="_subject"
-        value="Nowa wiadomość ze strony Safe Launch"
-      >
+    <form class="contact-form" action="https://formspree.io/f/mrpbvqke" method="POST">
+      <input type="hidden" name="_subject" value="Nowa wiadomość ze strony Safe Launch">
 
       <label class="field">
         <span>Adres e-mail</span>
@@ -688,33 +676,24 @@
       <label class="field">
         <span>Rodzaj usługi</span>
         <select name="rodzaj_uslugi" required>
-          <option value="" selected disabled>
-            Wybierz rodzaj usługi
-          </option>
-          <option value="Strona internetowa">
-            Strona internetowa
-          </option>
-          <option value="System CRM / ERP">
-            System CRM / ERP
-          </option>
-          <option value="Inne">
-            Inne
-          </option>
+          <option value="" selected disabled>Wybierz rodzaj usługi</option>
+          <option value="Strona internetowa">Strona internetowa</option>
+          <option value="System CRM / ERP">System CRM / ERP</option>
+          <option value="Inne">Inne</option>
         </select>
       </label>
 
       <label class="field">
         <span>Wiadomość</span>
         <textarea
-          name="wiadomosc"
+          name="message"
           placeholder="Opowiedz krótko o swoim pomyśle..."
           required
         ></textarea>
       </label>
 
       <button class="button button-primary" type="submit">
-        Wyślij wiadomość
-        <span aria-hidden="true">↗</span>
+        Wyślij wiadomość <span aria-hidden="true">↗</span>
       </button>
 
       <p class="form-note">
